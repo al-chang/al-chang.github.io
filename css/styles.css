@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+  background-color: #f6f5f5;
+  color: #00334e;
+  font-family: Merriweather, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #145374;
+  font-family: Montserrat, sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.stand-out {
+  font-weight: 700;
+  color: #ee6f57;
+}
+
+/* Media Query */
+@media (max-width: 440px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .landing {
+    text-align: center;
+  }
+}
+
+/* Landing Section */
+.landing {
+  height: 100vh;
+}
+
+.introduction {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.navbar {
+  padding-top: 2%;
+}
+
+#buzz-words {
+  color: #00334e;
+}
+
+.btn-outline-primary {
+  margin-top: 100px;
+  color: #145374;
+  border-color: #145374;
+}
+
+.btn-outline-primary:hover {
+  border-color: #ee6f57;
+  background-color: #ee6f57;
+}
+
+.btn-outline-primary:active {
+  border-color: #00334e;
+  background-color: #00334e;
+}
+
+#contact-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* About Me Section */
+
+.about-me {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.about {
+  padding-bottom: 5%;
+}
+
+.profile-image {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+
+/* Contact Section */
+
+.contact {
+  text-align: center;
+}
+
+.icon {
+  padding-right: 10px; 
+  color: #145374;
+  border-color: #145374;
+}
+
+.icon:hover {
+  transition: color .5s;
+  border-color: #ee6f57;
+  color: #ee6f57;
+}
+
+.icon:active {
+  border-color: #00334e;
+  color: #00334e;
+}
