@@ -70,6 +70,28 @@ h1 {
   color: inherit;
 }
 
+@media (max-width: 550px) {
+  #bottom-mobile {
+    visibility: visible;
+  }
+
+  #bottom-desktop {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media (min-width: 550px) {
+  #bottom-mobile {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #bottom-desktop {
+    visibility: visible;
+  }
+}
+
 /* About Me Section */
 
 .about-me {
@@ -95,7 +117,7 @@ h1 {
 }
 
 .icon {
-  padding-right: 10px; 
+  padding-right: 10px;
   color: #145374;
   border-color: #145374;
 }
