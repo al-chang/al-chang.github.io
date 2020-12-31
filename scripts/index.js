@@ -3,7 +3,7 @@ class TypeWriter {
     this.strings = strings;
     this.element = document.getElementById(elementId);
     this.currentWord = 0;
-    this.isDeleting = false;
+    this.deleteWords = false;
     this.text = "";
     this.speed = speed;
     this.loop = loop;
@@ -13,7 +13,8 @@ class TypeWriter {
     let currentLetter = this.text.length;
     let delay = this.speed;
 
-    if (this.isDeleting) {
+    // Check for deleting or typing words
+    if (this.deleteWords) {
       delay = this.speed / 2;
       // Case where we are deleting
       this.text = this.strings[this.currentWord].substring(0, currentLetter - 1);
@@ -25,11 +26,12 @@ class TypeWriter {
       this.element.innerHTML = this.text;
     }
 
+    // Check for reaching the end / start of word
     if (this.text.length === this.strings[this.currentWord].length) {
       // If we have typed the whole word, move to next word and start deleting
-      this.isDeleting = true;
+      this.deleteWords = true;
       delay = this.speed * 10;
-      // If we do not want a loop, just end before deleting
+      // If we do not want a loop, just end before deleting last word
       if (this.currentWord === this.strings.length - 1 && !this.loop) {
         return;
       }
@@ -38,7 +40,7 @@ class TypeWriter {
       delay = this.speed * 10;
       this.currentWord++;
 
-      this.isDeleting = false;
+      this.deleteWords = false;
       if (this.currentWord === this.strings.length) {
         this.currentWord = 0;
       }
@@ -50,6 +52,6 @@ class TypeWriter {
 
 // When the content is loaded call the function
 document.addEventListener('DOMContentLoaded', function(event) {
-  const writer = new TypeWriter(["student", "software engineer", "data scientist", "runner", "life-long learner"], "buzz-words", false, 100);
-  writer.type();
+  const writer = new TypeWriter(["student", "software engineer", "web designer", "data scientist", "runner", "life-long learner"], "buzz-words", false, 100);
+  setTimeout(() => writer.type(), 500);
 })
