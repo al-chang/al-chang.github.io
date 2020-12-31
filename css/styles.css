@@ -70,30 +70,19 @@ h1 {
   color: inherit;
 }
 
-@media (max-width: 550px) {
-  #bottom-mobile {
-    visibility: visible;
-  }
-
+@media (max-width: 575px) {
   #bottom-desktop {
-    visibility: hidden;
-    position: absolute;
+    display: none;
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 575px) {
   #bottom-mobile {
-    visibility: hidden;
-    position: absolute;
-  }
-
-  #bottom-desktop {
-    visibility: visible;
+    display: none;
   }
 }
 
 /* About Me Section */
-
 .about-me {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -109,11 +98,24 @@ h1 {
   margin: auto;
 }
 
+/* Projects Section */
+.card-title {
+  text-align: center;
+}
+
+.tech-list {
+  list-style: none;
+}
+
+.tech {
+  display: inline;
+  font-family: Inconsolata, Merriweather, serif;
+}
 
 /* Contact Section */
-
 .contact {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .icon {
