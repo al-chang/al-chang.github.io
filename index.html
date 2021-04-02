@@ -20,10 +20,12 @@
     <noscript>Your browser does not support JavaScript!</noscript>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-QVZZXW1W1G');
+      gtag("config", "G-QVZZXW1W1G");
     </script>
   </head>
 
@@ -73,7 +75,9 @@
           class="btn btn-lg btn-outline-primary"
           name="button"
         >
-          <a id="contact-button" href="mailto:chang.alex@northeastern.edu">Contact Me</a>
+          <a id="contact-button" href="mailto:chang.alex@northeastern.edu"
+            >Contact Me</a
+          >
         </button>
       </div>
     </div>
@@ -86,9 +90,17 @@
           <p>
             Hey! Welcome to my website. I am currently a second-year computer
             science major at
-            <strong class="stand-out">Northeastern University</strong>. I have
+            <a href="https://www.northeastern.edu/" target="_blank"><strong id="northeastern">Northeastern University</strong></a>. I have
             strong interests in web development, software engineering, and data
             science.
+          </p>
+          <p>
+            This summer I will be joining
+            <a href="https://www.blueport.com/" target="_blank"><strong id="blueport">Blueport Commerce</strong></a> as a front-end
+            development co-op. At Blueport, I will be working with Angular, C#,
+            and SASS. I'm also really excited to be joining
+            <a href="https://www.c4cneu.com/" target="_blank"><strong id="c4c">Code4Community</strong></a> in July, and to help continue their
+            mission of empowering non-profits in Boston with software solutions.
           </p>
           <p>
             I have experience working with Java, Python, JavaScript, HMTL, and
@@ -351,7 +363,10 @@
         crossorigin="anonymous"
       ></script>
       <script src="scripts/index.js" charset="utf-8"></script>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVZZXW1W1G"></script>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-QVZZXW1W1G"
+      ></script>
     </footer>
   </body>
 </html>

@@ -14,6 +14,10 @@ h1 {
   font-size: 5rem;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .stand-out {
   font-weight: 700;
   color: #ee6f57;
@@ -92,10 +96,39 @@ h1 {
   padding-bottom: 5%;
 }
 
+/* .about img {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
 .profile-image {
   width: 50%;
   display: block;
   margin: auto;
+}
+
+@media(min-width: 977px) {
+  .profile-image {
+    width: 50%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+  }
+}
+
+#northeastern {
+  color: #e61b1b;
+}
+
+#blueport {
+  color: #007fcc;
+}
+
+#c4c {
+  color: #5b54da;
 }
 
 /* Projects Section */
