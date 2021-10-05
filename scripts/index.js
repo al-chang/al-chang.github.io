@@ -17,12 +17,18 @@ class TypeWriter {
     if (this.deleteWords) {
       delay = this.speed / 2;
       // Case where we are deleting
-      this.text = this.strings[this.currentWord].substring(0, currentLetter - 1);
+      this.text = this.strings[this.currentWord].substring(
+        0,
+        currentLetter - 1
+      );
       this.element.innerHTML = this.text;
     } else {
       delay = this.speed;
       // Case where we are adding
-      this.text = this.strings[this.currentWord].substring(0, currentLetter + 1);
+      this.text = this.strings[this.currentWord].substring(
+        0,
+        currentLetter + 1
+      );
       this.element.innerHTML = this.text;
     }
 
@@ -51,7 +57,18 @@ class TypeWriter {
 }
 
 // When the content is loaded call the function
-document.addEventListener('DOMContentLoaded', function(event) {
-  const writer = new TypeWriter(["student", "software engineer", "web designer", "data scientist", "runner", "life-long learner"], "buzz-words", false, 100);
+document.addEventListener("DOMContentLoaded", function (event) {
+  const writer = new TypeWriter(
+    [
+      "student",
+      "software engineer",
+      "full-stack developer",
+      "runner",
+      "life-long learner",
+    ],
+    "buzz-words",
+    false,
+    100
+  );
   setTimeout(() => writer.type(), 500);
-})
+});
