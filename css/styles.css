@@ -5,7 +5,12 @@ body {
   font-family: Merriweather, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #145374;
   font-family: Montserrat, sans-serif;
 }
@@ -102,7 +107,7 @@ a:hover {
   margin: auto;
 }
 
-@media(min-width: 977px) {
+@media (min-width: 977px) {
   .profile-image {
     width: 50%;
     display: block;
@@ -124,6 +129,10 @@ a:hover {
 
 #c4c {
   color: #5b54da;
+}
+
+#pathai {
+  color: #ff3947;
 }
 
 /* Projects Section */
@@ -193,7 +202,7 @@ a:hover {
 }
 
 .icon:hover {
-  transition: color .5s;
+  transition: color 0.5s;
   border-color: #ee6f57;
   color: #ee6f57;
 }
