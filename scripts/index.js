@@ -63,11 +63,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
       "student",
       "software engineer",
       "full-stack developer",
-      "runner",
       "life-long learner",
     ],
     "buzz-words",
-    false,
+    true,
     100
   );
   setTimeout(() => writer.type(), 500);
